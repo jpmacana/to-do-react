@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+	max-width: 400px;
+	margin: auto;
+	padding: 1rem;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .date {
+	margin: 2rem 2rem 2rem 5rem;
+	display: flex;
+	font-size: small;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .date p {
+	padding: 0 5px;
+}
+.App .form-input {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .form-input .icon-item {
+	position: absolute;
+	left: 10px;
+	top: 0;
+	font-size: 25px;
+	color: cornflowerblue;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App form input {
+	border: 2px solid #eee;
+	padding: 5px 10px 5px 50px;
+	font-size: 19px;
+	line-height: 30px;
+	outline: 0;
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .task-row {
+	border: 2px solid #eee;
+	padding: 10px;
+	font-size: 18px;
+	line-height: 30px;
+	margin: 8px 0;
+	border-radius: 1rem;
+	width: 94%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .task-row p {
+	text-transform: capitalize;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .task-row .icon-item {
+	color: cornflowerblue;
+	font-size: 15px;
+	display: inline;
+}
+
+.App .task-row p {
+	text-transform: capitalize;
+}
+
+.completed {
+	background-color: aliceblue;
+	text-decoration: line-through;
+}
+
+.App .length {
+	margin: 2rem 0;
+	font-size: large;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.App .info {
+	margin: 1rem 0;
+	font-size: xx-small;
+	font-family: 'Press Start 2P', cursive;
 }
